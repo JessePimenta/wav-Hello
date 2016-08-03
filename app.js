@@ -3,6 +3,7 @@ var app = angular.module( 'app', ['ui.router']);
 
 
 app.config(function($stateProvider, $urlRouterProvider) {
+
 $urlRouterProvider.otherwise('/home');
 
 $stateProvider
@@ -11,11 +12,11 @@ $stateProvider
   url: '/home',
   templateUrl: 'templates/home.html'
 })
-    .state( 'about', {
+.state( 'about', {
         url: '/about',
       templateUrl: 'templates/login.html'
     })
-    .state( 'FAQ', {
+.state( 'FAQ', {
         url:'/FAQ',
       templateUrl: 'templates/FAQ.html'
     });
